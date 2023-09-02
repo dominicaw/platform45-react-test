@@ -1,0 +1,13 @@
+@import '../../app/variables.module.scss';
+
+.container {
+    display: flex;
+    flex-direction: row;
+    width: 75vw;
+    justify-content: space-between;
+}
+
+.leftContainer {
+    background-color: $yellow;
+    height: 100%;
+}
