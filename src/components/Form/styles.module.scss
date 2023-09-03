@@ -60,3 +60,29 @@
   justify-content: flex-end;
   width: 100%;
 }
+
+.cancelButton,
+.submitButton {
+  padding: 0.75rem 2rem;
+  border: 0;
+  cursor: pointer;
+  width: auto;
+  text-transform: uppercase;
+  border-radius: 0.25rem;
+}
+
+.cancelButton {
+  background-color: $pale-grey;
+  color: $charcoal-grey;
+  &:hover {
+    background-color: darken($pale-grey, 8%);
+  }
+}
+
+.submitButton {
+  background-color: $blue-green;
+  color: white;
+  &:hover {
+    background-color: darken($blue-green, 8%);
+  }
+}
