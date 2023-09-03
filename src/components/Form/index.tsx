@@ -32,6 +32,35 @@ export default function Form() {
         ></input>
       </div>
       <div className={styles.formRow}>
+        <legend>Gender</legend>
+        <div className={styles.radioGroup}>
+          <div className={styles.customRadio}>
+            <input
+              {...register('gender')}
+              type='radio'
+              id='male'
+              name='gender'
+              value='male'
+            />
+            <label className={styles.male} htmlFor='male'>
+              Male
+            </label>
+          </div>
+          <div className={styles.customRadio}>
+            <input
+              {...register('gender')}
+              type='radio'
+              id='female'
+              name='gender'
+              value='female'
+            />
+            <label className={styles.female} htmlFor='female'>
+              Female
+            </label>
+          </div>
+        </div>
+      </div>
+      <div className={styles.formRow}>
         <label htmlFor='date_of_birth'>Date of Birth</label>
         <input
           {...register('date_of_birth', { required: true })}

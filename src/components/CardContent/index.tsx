@@ -7,7 +7,7 @@ export default function CardContent() {
       <div className={styles.imageContainer}>
         <Image fill priority src='/images/face.svg' alt='Picture of a person' />
       </div>
-      <div>
+      <div className={styles.textContainer}>
         <h1>Front-end challenge!</h1>
         <p>This is a design that you will need to code up to impress us.</p>
       </div>

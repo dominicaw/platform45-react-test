@@ -2,7 +2,7 @@
 
 $border-radius-desktop: 2rem;
 $border-radius-mobile: 1rem;
-$padding: 4rem;
+$padding: 4rem 3rem;
 
 .container {
   display: flex;
@@ -15,7 +15,7 @@ $padding: 4rem;
 
   @media (min-width: $md-breakpoint) {
     flex-direction: row;
-    width: 80vw;
+    width: 85vw;
     border-radius: $border-radius-desktop;
   }
 
