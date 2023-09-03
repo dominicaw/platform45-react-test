@@ -39,7 +39,6 @@ export default function Form() {
               {...register('gender')}
               type='radio'
               id='male'
-              name='gender'
               value='male'
             />
             <label className={styles.male} htmlFor='male'>
@@ -51,7 +50,6 @@ export default function Form() {
               {...register('gender')}
               type='radio'
               id='female'
-              name='gender'
               value='female'
             />
             <label className={styles.female} htmlFor='female'>
@@ -95,6 +93,44 @@ export default function Form() {
           placeholder='576802-ERD0348 45'
           required
         ></input>
+      </div>
+      <div className={styles.formRow}>
+        <legend>Membership</legend>
+        <div className={styles.radioGroup}>
+          <div className={styles.customRadio}>
+            <input
+              {...register('membership')}
+              type='radio'
+              id='classic'
+              value='classic'
+            />
+            <label className={styles.membership} htmlFor='classic'>
+              Classic
+            </label>
+          </div>
+          <div className={styles.customRadio}>
+            <input
+              {...register('membership')}
+              type='radio'
+              id='silver'
+              value='silver'
+            />
+            <label className={styles.membership} htmlFor='silver'>
+              Silver
+            </label>
+          </div>
+          <div className={styles.customRadio}>
+            <input
+              {...register('membership')}
+              type='radio'
+              id='gold'
+              value='gold'
+            />
+            <label className={styles.membership} htmlFor='gold'>
+              Gold
+            </label>
+          </div>
+        </div>
       </div>
       <div className={styles.buttonContainer}>
         <button className={styles.cancelButton} type='reset'>

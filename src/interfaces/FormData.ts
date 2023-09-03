@@ -5,4 +5,5 @@ export default interface FormData {
   email: string
   mobile: string
   customer_id: string
+  membership: string
 }
