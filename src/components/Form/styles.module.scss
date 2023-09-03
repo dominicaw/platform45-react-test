@@ -59,6 +59,7 @@
       'Segoe UI Symbol', 'Noto Color Emoji';
     color: $cloudy-blue;
     cursor: pointer;
+    width: 100%;
 
     &::-webkit-calendar-picker-indicator {
       background-image: url('/images/calendar.svg');
