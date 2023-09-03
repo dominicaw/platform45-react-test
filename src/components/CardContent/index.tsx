@@ -1,7 +1,6 @@
 import CardContentProps from '@/interfaces/CardContent'
 import Image from 'next/image'
 import clsx from 'clsx'
-import PropTypes from 'prop-types'
 import styles from './styles.module.scss'
 
 export default function CardContent({ onClick, isOpen }: CardContentProps) {
@@ -22,9 +21,4 @@ export default function CardContent({ onClick, isOpen }: CardContentProps) {
       </div>
     </div>
   )
-}
-
-CardContent.propTypes = {
-  onClick: PropTypes.func,
-  isOpen: PropTypes.bool,
 }

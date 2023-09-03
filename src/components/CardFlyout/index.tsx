@@ -1,5 +1,4 @@
 import CardFlyoutProps from '@/interfaces/CardFlyout'
-import PropTypes from 'prop-types'
 import clsx from 'clsx'
 import styles from './styles.module.scss'
 
@@ -22,8 +21,4 @@ export default function CardFlyout({ isOpen }: CardFlyoutProps) {
       </p>
     </div>
   )
-}
-
-CardFlyout.propTypes = {
-  onClick: PropTypes.bool,
 }
