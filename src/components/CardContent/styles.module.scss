@@ -33,11 +33,22 @@
   height: 40px;
   background-color: $charcoal-grey;
   border-radius: 50%;
+  cursor: pointer;
 
   img {
     transform: rotate(90deg);
+    transition: transform 0.3s ease-in-out;
     @media (min-width: $md-breakpoint) {
       transform: rotate(0deg);
+    }
+  }
+
+  &.rotate {
+    img {
+      transform: rotate(-90deg);
+      @media (min-width: $md-breakpoint) {
+        transform: rotate(-180deg);
+      }
     }
   }
 }

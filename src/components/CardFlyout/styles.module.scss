@@ -1,0 +1,37 @@
+@import '../../app/variables.module.scss';
+
+.container {
+  position: absolute;
+  top: -100%;
+  background-color: $tangerine;
+  z-index: -1;
+  padding: 4rem;
+  height: 100%;
+  border-radius: 0 0 $border-radius-mobile $border-radius-mobile;
+  opacity: 0;
+  transition: top 0.2s ease-in-out, opacity 0.2s ease-in-out,
+    z-index 0.2s ease-in-out;
+
+  @media (min-width: $md-breakpoint) {
+    left: -100%;
+    top: 0;
+    border-radius: 0 $border-radius-desktop $border-radius-desktop 0;
+    transition: left 0.2s ease-in-out, opacity 0.2s ease-in-out,
+      z-index 0.2s ease-in-out;
+  }
+
+  h2 {
+    margin-bottom: 2rem;
+  }
+
+  &.active {
+    top: 0;
+    left: 0;
+    opacity: 1;
+    z-index: 1;
+    @media (min-width: $md-breakpoint) {
+      left: 0;
+      top: 0;
+    }
+  }
+}

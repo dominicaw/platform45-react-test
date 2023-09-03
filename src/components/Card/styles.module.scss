@@ -1,7 +1,5 @@
 @import '../../app/variables.module.scss';
 
-$border-radius-desktop: 2rem;
-$border-radius-mobile: 1rem;
 $padding: 4rem 3rem;
 
 .container {
@@ -12,6 +10,7 @@ $padding: 4rem 3rem;
   border-radius: $border-radius-mobile;
   background-color: white;
   box-shadow: 0px 10px 15px -8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
 
   @media (min-width: $md-breakpoint) {
     flex-direction: row;
@@ -30,6 +29,7 @@ $padding: 4rem 3rem;
   padding: $padding;
   width: 100%;
   height: auto;
+  z-index: 2;
 
   @media (min-width: $md-breakpoint) {
     width: 40%;
@@ -39,6 +39,7 @@ $padding: 4rem 3rem;
 
 .rightContainer {
   padding: $padding;
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
