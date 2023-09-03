@@ -26,4 +26,5 @@ export default function CardContent({ onClick, isOpen }: CardContentProps) {
 
 CardContent.propTypes = {
   onClick: PropTypes.func,
+  isOpen: PropTypes.bool,
 }

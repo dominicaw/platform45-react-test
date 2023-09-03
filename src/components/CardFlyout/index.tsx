@@ -6,7 +6,7 @@ import styles from './styles.module.scss'
 export default function CardFlyout({ isOpen }: CardFlyoutProps) {
   return (
     <div className={clsx(styles.container, isOpen ? styles.active : '')}>
-      <h2>Some stuff</h2>
+      <h2>My world today</h2>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla euismod
         euismod felis, in luctus odio bibendum sit amet. Pellentesque vel mauris
