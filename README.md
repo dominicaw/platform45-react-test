@@ -24,4 +24,4 @@ I have familiarity with it, and it is the simplest way to set up a new form for 
 
 ### Why SASS?
 
-Vanilla CSS has come a long way, and now has nested styles, scoped styles using `@layer`, and most recently, nested styles. Nested styles is the main reason I use SASS, however it's still very new in vanilla CSS and doesn't have the widest support yet. This is why I stuck to SASS for this project. I also considered TailwindCSS, but for the sake of the test went for SASS.
+Vanilla CSS has come a long way, and now has variables, scoped styles using `@layer`, and most recently, nested styles. Nested styles is the main reason I use SASS, however it's still very new in vanilla CSS and doesn't have the widest support yet. This is why I stuck to SASS for this project. I also considered TailwindCSS, but for the sake of the test went for SASS.
