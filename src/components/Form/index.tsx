@@ -1,6 +1,7 @@
 'use client'
+import React from 'react'
+import { useForm, SubmitHandler } from 'react-hook-form'
 import FormData from '@/interfaces/FormData'
-import { SubmitHandler, useForm } from 'react-hook-form'
 import styles from './styles.module.scss'
 
 export default function Form() {
