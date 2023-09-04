@@ -1,4 +1,4 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Platform 45 React Test - Dominica Wannenburg
 
 ## Getting Started
 
@@ -6,29 +6,22 @@ First, run the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Project is also hosted on Netlify here: [https://platform45-react-dominica.netlify.app/](https://platform45-react-dominica.netlify.app/)
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Tech choices
 
-## Learn More
+### Why NextJS?
 
-To learn more about Next.js, take a look at the following resources:
+While it might seem like overkill for a simple test project, if this was a real project, Next.js is an excellent choice for building web applications, especially those that involve user authentication and account creation. I also have production experience with NextJS, so it is a comfortable solution for me.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Why React Hook Form?
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+I have familiarity with it, and it is the simplest way to set up a new form for me.
 
-## Deploy on Vercel
+### Why SASS?
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Vanilla CSS has come a long way, and now has nested styles, scoped styles using `@layer`, and most recently, nested styles. Nested styles is the main reason I use SASS, however it's still very new in vanilla CSS and doesn't have the widest support yet. This is why I stuck to SASS for this project. I also considered TailwindCSS, but for the sake of the test went for SASS.
