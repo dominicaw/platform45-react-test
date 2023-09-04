@@ -12,6 +12,14 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 Project is also hosted on Netlify here: [https://platform45-react-dominica.netlify.app/](https://platform45-react-dominica.netlify.app/)
 
+## Running tests
+
+The project has Jest and React Testing Library, with one test.
+
+```bash
+npm run test
+```
+
 ## Tech choices
 
 ### Why NextJS?
